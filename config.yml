@@ -1,0 +1,14 @@
+--- #Module
+id: external_test_train
+#model: efficientnetTrainAdamB0.mlmodel
+model: efficientnetTrainAdamB0NoBias.mlmodel
+type: model
+#model: squeezenetTrainAdam.mlmodel
+trainable: True
+fixed_labels: False
+disable_training: False
+description: This module uses the squeezenet convolutional based architecture to perform prediction.
+labels:
+labelThreshold: 0.5
+image_mode: scaleFill
+augmentation: none
